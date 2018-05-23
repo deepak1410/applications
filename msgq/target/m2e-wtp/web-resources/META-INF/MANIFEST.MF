@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: msgq
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: deepak.af.kumar
+Implementation-Vendor-Id: com.dpk
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/msgq
+Created-By: Maven Integration for Eclipse
+
