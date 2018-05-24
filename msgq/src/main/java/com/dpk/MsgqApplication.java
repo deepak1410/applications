@@ -21,7 +21,6 @@ import org.springframework.messaging.handler.annotation.support.DefaultMessageHa
 
 import com.dpk.config.ApplicationConfigReader;
 
-
 @EnableRabbit
 @SpringBootApplication
 public class MsgqApplication extends SpringBootServletInitializer implements RabbitListenerConfigurer {
@@ -86,7 +85,6 @@ public class MsgqApplication extends SpringBootServletInitializer implements Rab
 	public Binding declareBindingApp2() {
 		return BindingBuilder.bind(getApp2Queue()).to(getApp2Exchange()).with(getApplicationConfig().getApp2RoutingKey());
 	}
-	
 
 	/* Bean for rabbitTemplate */
 	@Bean
@@ -106,8 +104,6 @@ public class MsgqApplication extends SpringBootServletInitializer implements Rab
 		return new MappingJackson2MessageConverter();
 	}
 	
-	
-
 	@Bean
 	public DefaultMessageHandlerMethodFactory messageHandlerMethodFactory() {
 		DefaultMessageHandlerMethodFactory factory = new DefaultMessageHandlerMethodFactory();
@@ -121,8 +117,3 @@ public class MsgqApplication extends SpringBootServletInitializer implements Rab
 	}
 	
 }
-
-
-
-
-
